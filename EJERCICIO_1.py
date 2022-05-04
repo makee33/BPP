@@ -15,7 +15,7 @@ class ColumnaVacia(Error):
 
 # LEEMOS EL ARCHIVO CSV Y LO PONEMOS EN UN DATAFRAME
 try:
-    df = pd.read_csv('finanzas2020.csv', sep="\t")
+    df = pd.read_csv("finanzas2020.csv", sep="\t")
 except IOError as e:
     print(f"No se encuentra el fichero o no se puede leer. Error:{e}")
 else:
